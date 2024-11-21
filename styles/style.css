@@ -43,6 +43,14 @@ p {
     margin: 0;
 }
 
+footer {
+    border-top: 8px solid var(--deep-red);
+}
+
+header {
+    border-bottom: 8px solid var(--deep-red);
+}
+
 /* General */
 .eighth-grid{
     display:grid;
@@ -124,6 +132,7 @@ p {
 @media (max-width: 576px){
     h1 {
         font-size: 24px;
+        margin: 16px 0;
     }
     h2 {
         font-size: 22px;
@@ -134,6 +143,15 @@ p {
     p {
         font-size: 16px;
     }
+
+    footer{
+       border-width: 4px;
+    }
+
+    header{
+        border-width: 4px;
+    }
+
     .footer-div{
         display: flex;
         flex-direction: column;
