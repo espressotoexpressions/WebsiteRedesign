@@ -43,16 +43,38 @@ p {
     margin: 0;
 }
 
-/* Navbar */
-
-/* Navbar */
-
-/* Footer */
+/* General */
 .eighth-grid{
     display:grid;
     grid-template-columns: repeat(8, 1fr);
 }
+/* General End */
 
+/* Navbar */
+.eighth-grid nav{
+    grid-column: 2 / span 6;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: var(--deep-red);
+}
+
+.dropdown-item:hover {
+    color: var(--deep-red);
+}
+
+.collapse{
+    margin-right: 134px;
+}
+/* Navbar */
+
+
+
+/* Footer */
 .footer-div{
     grid-column: 2 / span 6;
     display: flex;
