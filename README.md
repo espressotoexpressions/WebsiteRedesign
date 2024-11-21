@@ -7,7 +7,7 @@
 - Have site fully responsive in all formats
 
 ### _GitHub Repository Link:_
-[Website Redesign Repository]()
+[Website Redesign Repository](https://github.com/espressotoexpressions/WebsiteRedesign.git)
 
 ***Change Log***
 + mm/dd/yyyy - DM/KC/TV - short description
