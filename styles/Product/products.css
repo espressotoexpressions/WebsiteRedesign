@@ -1,1 +1,24 @@
 @import url(../style.css);
+
+.guitars-bg{
+    background-image: url(../../assets/guitar.jpg);
+    /* saturate always set to 0% for grayscale*/
+    filter:  brightness(100%)  contrast(100%)  saturate(0%); 
+    background-size:cover ;
+    background-position: center; 
+    
+height: 508px;
+}
+.guitars-txt{
+
+    text-align: right;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ 
+}
+.gray-section{
+    background-color: var(--gray);
+    height: 508px;
+}
