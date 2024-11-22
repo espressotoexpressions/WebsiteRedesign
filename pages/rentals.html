@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lessons</title>
+    <title>Rentals</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="../styles/Rentals/rentals.css" />
@@ -22,7 +22,7 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-lg-center" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse  justify-content-lg-center" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <h3 class="nav-item">
                             <a class="nav-link" href="../index.html">Home</a>
@@ -61,54 +61,57 @@
 
     <main>
         <!-- Rental Overview - Start -->
-        <article>
-            <h1>Instrument Rental Program</h1>
-            <h2>Here Is How It Works</h2>
-            <ul>
-                <li>
-                    <p>
-                        You may return the instrument at any time. You are never obligated
-                        to buy the instrument
-                    </p>
-                </li>
-                <li>
-                    <p>We do not charge a security deposit.</p>
-                </li>
-                <li>
-                    <p>We do not require a major credit card or do a credit check.</p>
-                </li>
-                <li>
-                    <p>
-                        We guarantee that our instruments will pass inspection by the
-                        music teacher.
-                    </p>
-                </li>
-                <li>
-                    <p>We do not require a Social Security number.</p>
-                </li>
-                <li>
-                    <p>
-                        Theft and maintenance coverage is included in these prices.
-                        Loaners are available at no charge.
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        You may apply 9 months rent toward the purchase of the instrument
-                        your renting or a step up. Optional purchase plan: 12 months, same
-                        as cash! 0% finance charge. The first two months payment is
-                        required at time of rental.
-                    </p>
-                </li>
-            </ul>
-            <small class="fine-print">*The following rates are effective until June 2021, and include
-                applicable sales tax. There is a two-month non-refundable minimum
-                rental.</small>
-        </article>
+        <section class="gray-bg eighth-grid">
+            <div>
+                <h1 class="text-center">Instrument Rental Program</h1>
+                <h2>Here Is How It Works</h2>
+                <ul>
+                    <li>
+                        <p>
+                            You may return the instrument at any time. You are never obligated
+                            to buy the instrument
+                        </p>
+                    </li>
+                    <li>
+                        <p>We do not charge a security deposit.</p>
+                    </li>
+                    <li>
+                        <p>We do not require a major credit card or do a credit check.</p>
+                    </li>
+                    <li>
+                        <p>
+                            We guarantee that our instruments will pass inspection by the
+                            music teacher.
+                        </p>
+                    </li>
+                    <li>
+                        <p>We do not require a Social Security number.</p>
+                    </li>
+                    <li>
+                        <p>
+                            Theft and maintenance coverage is included in these prices.
+                            Loaners are available at no charge.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            You may apply 9 months rent toward the purchase of the instrument
+                            your renting or a step up. Optional purchase plan: 12 months, same
+                            as cash! 0% finance charge. The first two months payment is
+                            required at time of rental.
+                        </p>
+                    </li>
+                </ul>
+                <small class="fine-print">*The following rates are effective until June 2021, and include
+                    applicable sales tax. There is a two-month non-refundable minimum
+                    rental.</small>
+            </div>
+            
+            </section>
         <!-- Rental Overview - End -->
 
         <!-- Promo Banner - Start -->
-        <section>
+        <section class="black-bg white-txt p-5">
             <h2 class="text-center">
                 Back to school special
                 <br />
@@ -118,12 +121,13 @@
         <!-- Promo Banner - End -->
 
         <!-- Standard Rental Section - Start -->
-        <section>
-            <div>
-                <h1>Standard Instrument Prices</h1>
+        <section >
+            <div class="text-center notes-bg section-height white-txt d-flex 
+            justify-content-center align-items-center">
+                <h1 >Standard Instrument Prices</h1>
             </div>
-            <div>
-                <table class="d-none d-lg-block">
+            <div class="d-flex justify-content-center">
+                <table class="d-none d-lg-block format-table">
                     <tr>
                         <th>
                             <h2>Instrument</h2>
@@ -226,8 +230,8 @@
                 </table>
 
                 <!-- The Accordian only displays on mobile -->
-                <div class="accordion d-lg-none" id="accordionPanelsStayOpenExample">
-                    <div class="accordion-item">
+                <div class="accordion d-lg-none  w-100 gray-bg" id="accordionPanelsStayOpenExample " >
+                    <div class="accordion-item" >
                         <h2 class="accordion-header">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
@@ -235,17 +239,14 @@
                                 Drum Kit, Bell Kit, Guitar
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                            <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It
-                                is shown by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show me-0">
+                            <div class="accordion-body  d-flex flex-column align-items-center">
+                                <h3>Value</h3>
+                                <p>$325 and up</p>
+                                <br>
+                                <h3> Rental Fee</h3>
+                                <p> $29.00 per month</p>
+                                
                             </div>
                         </div>
                     </div>
@@ -257,7 +258,7 @@
                                 Picolo, Flute, Clarinet
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the second item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -279,7 +280,7 @@
                                 Trumpet, Trombone
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -301,7 +302,7 @@
                                 Alto Saxophone
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -323,7 +324,7 @@
                                 Tenor Saxophone
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -345,7 +346,7 @@
                                 Oboe, Cello
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -367,7 +368,7 @@
                                 Violin
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -389,7 +390,7 @@
                                 Viola
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -410,11 +411,12 @@
 
         <!-- Budget Rental Section - Start -->
         <section>
-            <div>
+            <div class="text-center notes-flipped-bg section-height white-txt d-flex 
+            justify-content-center align-items-center">
                 <h1>Budget Instrument Prices</h1>
             </div>
-            <div>
-                <table class="d-none d-lg-block">
+            <div class="d-flex justify-content-center">
+                <table class="d-none d-lg-block format-table">
                     <tr>
                         <th>
                             <h2>Instrument</h2>
@@ -516,10 +518,10 @@
                     </tr>
                 </table>
 
-                <div class="accordion d-lg-none" id="accordionPanelsStayOpenExample">
+                <div class="accordion d-lg-none w-100 gray-bg" id="accordionPanelsStayOpenExample ">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#panelsStayOpen-collapse11" aria-expanded="true"
                                 aria-controls="panelsStayOpen-collapseOne">
                                 Drum Kit, Bell Kit, Guitar
@@ -547,7 +549,7 @@
                                 Picolo, Flute, Clarinet
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapse12" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapse12" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the second item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -569,7 +571,7 @@
                                 Trumpet, Trombone
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapse13" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapse13" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -591,7 +593,7 @@
                                 Alto Saxophone
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapse14" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapse14" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -613,7 +615,7 @@
                                 Tenor Saxophone
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapse15" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapse15" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -635,7 +637,7 @@
                                 Oboe, Cello
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapse16" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapse16" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -657,7 +659,7 @@
                                 Violin
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapse17" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapse17" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
@@ -679,7 +681,7 @@
                                 Viola
                             </button>
                         </h2>
-                        <div id="panelsStayOpen-collapse18" class="accordion-collapse collapse">
+                        <div id="panelsStayOpen-collapse18" class="accordion-collapse collapse me-0">
                             <div class="accordion-body">
                                 <strong>This is the third item's accordion body.</strong> It
                                 is hidden by default, until the collapse plugin adds the
