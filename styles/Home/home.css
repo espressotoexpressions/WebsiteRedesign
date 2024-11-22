@@ -1,9 +1,13 @@
 @import url(../style.css);
 @import url(home-hero.css);
 @import url(home-about.css);
+@import url(home-products.css);
 
 .my-32{
     margin:32px 0; 
 }
 
+.py-32{
+    padding:32px 0; 
+}
 
