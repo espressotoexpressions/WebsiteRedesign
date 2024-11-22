@@ -1,1 +1,35 @@
 @import url(../style.css);
+
+/* General Use - Start */
+.mb-32px {
+    margin-bottom: 32px;
+}
+
+.grid-margin {
+    grid-column: 2 / span 6;
+}
+
+.repair-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    row-gap: 3rem;
+}
+
+.repair-grid h3 {
+    color: var(--deep-red);
+}
+/* General Use - End */
+
+/* Acoustic Repairs - Start */
+/* Acoustic Repairs - End */
+
+/* Acoustic Blurb - Start */
+
+/* Acoustic Blurb - End */
+
+/* Electric Repairs - Start */
+/* Electric Repairs - End */
+
+/* Electric Blurb - Start */
+/* Electric Blurb - End */
