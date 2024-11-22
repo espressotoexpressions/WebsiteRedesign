@@ -1,0 +1,46 @@
+@import url(../style.css);
+
+.home-about-header {
+    grid-column: 2 / 6;
+}
+
+.home-about-body {
+    grid-column: 2 / 6;
+}
+
+.home-about-img {
+    grid-column: 6 / 8;
+    grid-row: 1 / 3;
+}
+
+.owner-img {
+    max-width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: 0% 50%;
+    border-radius: 4px;
+}
+
+@media (max-width: 992px) {
+    .home-about-header {
+        grid-column: 2 / 8;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .home-about-body {
+        grid-column: 2 / 8;
+        grid-row-start: 3;
+    }
+    
+    .home-about-img {
+        grid-column: 2 / 8;
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+    }
+
+    .owner-img {
+        height: 290px;
+    }
+}

@@ -1,5 +1,10 @@
 @import url(../style.css);
 @import url(home-hero.css);
+@import url(home-about.css);
+
+.my-32{
+    margin:32px 0; 
+}
 
 
 
