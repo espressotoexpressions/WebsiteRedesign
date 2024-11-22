@@ -19,17 +19,50 @@
 .repair-grid h3 {
     color: var(--deep-red);
 }
+
+section {
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: black;
+    color: white;
+}
+
+article {
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+/* .bg-grey-panel {
+    grid-column: 2 / ;
+} */
 /* General Use - End */
 
 /* Acoustic Repairs - Start */
 /* Acoustic Repairs - End */
 
 /* Acoustic Blurb - Start */
-
+.bg-acoustic {
+    background-image: url(../../assets/caio-silva-C7RFkKvThG4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /* Acoustic Blurb - End */
 
 /* Electric Repairs - Start */
 /* Electric Repairs - End */
 
 /* Electric Blurb - Start */
+.bg-electric {
+    background-image: url(../../assets/simon-weisser-phS37wg8cQg-unsplash.jpg);
+    filter: grayscale(100%);
+    transform: scaleX(-1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-compensate {
+    transform: scaleX(-1);
+}
 /* Electric Blurb - End */
