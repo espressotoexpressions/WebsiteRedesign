@@ -1,5 +1,11 @@
 @import url(../style.css);
 
+body {
+    display: grid;
+    height:100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
 .eighth-grid> div{
     grid-column: 2 / span 6;
    
@@ -8,10 +14,14 @@
    
 }
 
-.col{
+.col-12{
     display:flex;
     flex-direction: column;
     align-items: start;
+    
+}
+.contactDetails{
+    width: 70%;
 }
 
 .formSubmit{
@@ -51,9 +61,14 @@
 
 
 @media (max-width: 992px){
-    .maingrid{
-        height:1000px;
-    }
+.col-12{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+       
+
+}
+
 }
 
 
