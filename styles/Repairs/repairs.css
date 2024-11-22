@@ -32,13 +32,18 @@ article {
     grid-template-columns: repeat(8, 1fr);
 }
 
-/* .bg-grey-panel {
-    grid-column: 2 / ;
-} */
+.bg-grey-panel {
+    grid-column: 2 / span 6;
+    background-color: black;
+    filter: opacity(75%);
+}
 /* General Use - End */
 
-/* Acoustic Repairs - Start */
-/* Acoustic Repairs - End */
+/* Repair Overview - Start */
+.page-title {
+    grid-column: 2 / span 6;
+}
+/* Repair Overview - End */
 
 /* Acoustic Blurb - Start */
 .bg-acoustic {
@@ -49,20 +54,45 @@ article {
 }
 /* Acoustic Blurb - End */
 
-/* Electric Repairs - Start */
-/* Electric Repairs - End */
-
 /* Electric Blurb - Start */
 .bg-electric {
-    background-image: url(../../assets/simon-weisser-phS37wg8cQg-unsplash.jpg);
+    background-image: url(../../assets/simon-weisser-phS37wg8cQg-unsplash-flipped.jpg);
     filter: grayscale(100%);
-    transform: scaleX(-1);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-
-.text-compensate {
-    transform: scaleX(-1);
-}
 /* Electric Blurb - End */
+
+/* ########################### Tablet - Start ########################### */
+@media (max-width: 992px) {
+    .repair-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-margin {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+/* ########################### Tablet - End ########################### */
+
+/* ########################### Mobile - Start ########################### */
+@media (max-width: 576px) {
+    .grid-margin {
+        grid-column: 1 / span 8;
+    }
+
+    .repair-grid {
+        row-gap: 24px;
+    }
+
+    section h2 {
+        margin: 0 8px 32px;
+    }
+
+    section h3 {
+        margin-bottom: 24px;
+    }
+}
+/* ########################### Mobile - End ########################### */
