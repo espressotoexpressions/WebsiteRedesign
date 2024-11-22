@@ -11,6 +11,9 @@
 .right-align{
     justify-items: end;     
 }
+.right-align h2, .right-align h3{
+    text-align: end;
+}
 .txt-section-width{
     width: 50%;
 }
@@ -29,7 +32,7 @@
 
 
 .guitars-bg{
-    background-image: url(../../assets/guitar.jpg);
+    background-image: url(../../assets/guitar-1.jpg);
    /*use grayscale 100% to change it to bnw*/
     filter:  brightness(100%)  contrast(120%)   grayscale(100%); 
     background-size:cover ;
@@ -76,33 +79,11 @@
     .section{
         height:auto;
     }
-    
-    .guitars-bg{
-        background-size:cover ;
-        background-position: center; 
-    
-      
+    .bg-color-overlay{
+        background-color:  #00000080;
+        
     }
-    .keyboards-bg{
-    
-        background-size:cover ;
-        background-position: center; 
-    
-    }
-    .amplifiers-bg{
-  
-        background-size:cover  ;
-        background-position:center
-    
-    }
-    
-    .guitarteachers-bg{
-    
-        background-size:cover  ;
-        background-position:center
-    
-    }
-    .txt-section-width{
+     .txt-section-width{
         width: 100%;
     }
     }
