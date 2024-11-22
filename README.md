@@ -6,6 +6,12 @@
 - This redesign should improve their site and make it more up to date. 
 - Have site fully responsive in all formats
 
+### Old company website 
+https://janismusicco.com/
+
+### Figma Prototype
+https://www.figma.com/design/Uvq9z2qmfLtXDWqNiaUXsM/Website-Redesign?node-id=54-183&t=bDkyZ34Sz4jy6QfJ-1
+
 ### _GitHub Repository Link:_
 [Website Redesign Repository](https://github.com/espressotoexpressions/WebsiteRedesign.git)
 
