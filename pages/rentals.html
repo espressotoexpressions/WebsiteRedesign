@@ -1,734 +1,836 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Rentals</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles/Rentals/rentals.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="eighth-grid bg-black">
-        <nav class="navbar navbar-expand-lg bg-black my-5" data-bs-theme="dark">
-            <div class="container-fluid my-2 p-0">
-                <a class="navbar-brand" href="../index.html">
-                    <img class="logo-JMC" src="../assets/JMC_LOGO.png" alt="store logo" />
+      <nav class="navbar navbar-expand-lg bg-black my-5" data-bs-theme="dark">
+        <div class="container-fluid my-2 p-0">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              class="logo-JMC"
+              src="../assets/JMC_LOGO.png"
+              alt="store logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-lg-center"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <h3 class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </h3>
+              <h3 class="nav-item">
+                <a class="nav-link" href="./products.html">Products</a>
+              </h3>
+              <h3 class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse  justify-content-lg-center" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <h3 class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
-                        </h3>
-                        <h3 class="nav-item">
-                            <a class="nav-link" href="./products.html">Products</a>
-                        </h3>
-                        <h3 class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu">
-                                <h3>
-                                    <a class="dropdown-item" href="./lessons.html">Lessons</a>
-                                </h3>
-                                <h3>
-                                    <a class="dropdown-item" href="./repairs.html">Repairs</a>
-                                </h3>
-                                <h3>
-                                    <a class="dropdown-item" href="./rentals.html">Rentals</a>
-                                </h3>
-                            </ul>
-                        </h3>
-                        <h3 class="nav-item">
-                            <a class="nav-link" href="./about.html">About</a>
-                        </h3>
-                        <h3 class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
-                        </h3>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                <ul class="dropdown-menu">
+                  <h3>
+                    <a class="dropdown-item" href="./lessons.html">Lessons</a>
+                  </h3>
+                  <h3>
+                    <a class="dropdown-item" href="./repairs.html">Repairs</a>
+                  </h3>
+                  <h3>
+                    <a class="dropdown-item" href="./rentals.html">Rentals</a>
+                  </h3>
+                </ul>
+              </h3>
+              <h3 class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </h3>
+              <h3 class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </h3>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Rental Overview - Start -->
-        <section class="gray-bg eighth-grid">
-            <div>
-                <h1 class="text-center">Instrument Rental Program</h1>
-                <h2>Here Is How It Works</h2>
-                <ul>
-                    <li>
-                        <p>
-                            You may return the instrument at any time. You are never obligated
-                            to buy the instrument
-                        </p>
-                    </li>
-                    <li>
-                        <p>We do not charge a security deposit.</p>
-                    </li>
-                    <li>
-                        <p>We do not require a major credit card or do a credit check.</p>
-                    </li>
-                    <li>
-                        <p>
-                            We guarantee that our instruments will pass inspection by the
-                            music teacher.
-                        </p>
-                    </li>
-                    <li>
-                        <p>We do not require a Social Security number.</p>
-                    </li>
-                    <li>
-                        <p>
-                            Theft and maintenance coverage is included in these prices.
-                            Loaners are available at no charge.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            You may apply 9 months rent toward the purchase of the instrument
-                            your renting or a step up. Optional purchase plan: 12 months, same
-                            as cash! 0% finance charge. The first two months payment is
-                            required at time of rental.
-                        </p>
-                    </li>
-                </ul>
-                <small class="fine-print">*The following rates are effective until June 2021, and include
-                    applicable sales tax. There is a two-month non-refundable minimum
-                    rental.</small>
-            </div>
-            
-            </section>
-        <!-- Rental Overview - End -->
+      <!-- Rental Overview - Start -->
+      <section class="gray-bg eighth-grid">
+        <div>
+          <h1 class="text-center">Instrument Rental Program</h1>
+          <h2>Here Is How It Works</h2>
+          <ul>
+            <li>
+              <p>
+                You may return the instrument at any time. You are never
+                obligated to buy the instrument
+              </p>
+            </li>
+            <li>
+              <p>We do not charge a security deposit.</p>
+            </li>
+            <li>
+              <p>We do not require a major credit card or do a credit check.</p>
+            </li>
+            <li>
+              <p>
+                We guarantee that our instruments will pass inspection by the
+                music teacher.
+              </p>
+            </li>
+            <li>
+              <p>We do not require a Social Security number.</p>
+            </li>
+            <li>
+              <p>
+                Theft and maintenance coverage is included in these prices.
+                Loaners are available at no charge.
+              </p>
+            </li>
+            <li>
+              <p>
+                You may apply 9 months rent toward the purchase of the
+                instrument your renting or a step up. Optional purchase plan: 12
+                months, same as cash! 0% finance charge. The first two months
+                payment is required at time of rental.
+              </p>
+            </li>
+          </ul>
+          <small class="fine-print"
+            >*The following rates are effective until June 2021, and include
+            applicable sales tax. There is a two-month non-refundable minimum
+            rental.</small
+          >
+        </div>
+      </section>
+      <!-- Rental Overview - End -->
 
-        <!-- Promo Banner - Start -->
-        <section class="black-bg white-txt p-5">
-            <h2 class="text-center">
-                Back to school special
-                <br />
-                rent for 2 months - get one month free
-            </h2>
-        </section>
-        <!-- Promo Banner - End -->
+      <!-- Promo Banner - Start -->
+      <section class="black-bg white-txt p-5">
+        <h2 class="text-center">
+          Back to school special
+          <br />
+          rent for 2 months - get one month free
+        </h2>
+      </section>
+      <!-- Promo Banner - End -->
 
-        <!-- Standard Rental Section - Start -->
-        <section >
-            <div class="text-center notes-bg section-height white-txt d-flex 
-            justify-content-center align-items-center">
-                <h1 >Standard Instrument Prices</h1>
-            </div>
-            <div class="d-flex justify-content-center">
-                <table class="d-none d-lg-block format-table">
-                    <tr>
-                        <th>
-                            <h2>Instrument</h2>
-                        </th>
-                        <th>
-                            <h2>Value</h2>
-                        </th>
-                        <th>
-                            <h2>Rental Fee</h2>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Drum Kit, Bell Kit, Guitar</p>
-                        </td>
-                        <td>
-                            <p>S325 and up</p>
-                        </td>
-                        <td>
-                            <p>$29.00 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Picolo, Flute, Clarinet</p>
-                        </td>
-                        <td>
-                            <p>$875 and up</p>
-                        </td>
-                        <td>
-                            <p>$29.00 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Trumpet, Trombone</p>
-                        </td>
-                        <td>
-                            <p>$925 and up</p>
-                        </td>
-                        <td>
-                            <p>$35.00 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Alto Saxophone</p>
-                        </td>
-                        <td>
-                            <p>$18750 and up</p>
-                        </td>
-                        <td>
-                            <p>$58.50 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Tenor Saxophone</p>
-                        </td>
-                        <td>
-                            <p>$2375 and up</p>
-                        </td>
-                        <td>
-                            <p>$73.50 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Oboe, Cello</p>
-                        </td>
-                        <td>
-                            <p>$1775 and up</p>
-                        </td>
-                        <td>
-                            <p>$48.50 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Violin</p>
-                        </td>
-                        <td>
-                            <p>$775 and up</p>
-                        </td>
-                        <td>
-                            <p>$29.00 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Viola</p>
-                        </td>
-                        <td>
-                            <p>$825 and up</p>
-                        </td>
-                        <td>
-                            <p>$25.00 per month</p>
-                        </td>
-                    </tr>
-                </table>
+      <!-- Standard Rental Section - Start -->
+      <section>
+        <div
+          class="text-center notes-bg section-height white-txt d-flex justify-content-center align-items-center"
+        >
+          <h1>Standard Instrument Prices</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+          <table class="d-none d-lg-block format-table">
+            <tr>
+              <th>
+                <h2>Instrument</h2>
+              </th>
+              <th>
+                <h2>Value</h2>
+              </th>
+              <th>
+                <h2>Rental Fee</h2>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <p>Drum Kit, Bell Kit, Guitar</p>
+              </td>
+              <td>
+                <p>S325 and up</p>
+              </td>
+              <td>
+                <p>$29.00 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Picolo, Flute, Clarinet</p>
+              </td>
+              <td>
+                <p>$875 and up</p>
+              </td>
+              <td>
+                <p>$29.00 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Trumpet, Trombone</p>
+              </td>
+              <td>
+                <p>$925 and up</p>
+              </td>
+              <td>
+                <p>$35.00 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Alto Saxophone</p>
+              </td>
+              <td>
+                <p>$1875 and up</p>
+              </td>
+              <td>
+                <p>$58.50 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Tenor Saxophone</p>
+              </td>
+              <td>
+                <p>$2375 and up</p>
+              </td>
+              <td>
+                <p>$73.50 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Oboe, Cello</p>
+              </td>
+              <td>
+                <p>$1775 and up</p>
+              </td>
+              <td>
+                <p>$48.50 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Violin</p>
+              </td>
+              <td>
+                <p>$775 and up</p>
+              </td>
+              <td>
+                <p>$29.00 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Viola</p>
+              </td>
+              <td>
+                <p>$825 and up</p>
+              </td>
+              <td>
+                <p>$25.00 per month</p>
+              </td>
+            </tr>
+          </table>
 
-                <!-- The Accordian only displays on mobile -->
-                <div class="accordion d-lg-none  w-100 gray-bg" id="accordionPanelsStayOpenExample " >
-                    <div class="accordion-item" >
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                aria-controls="panelsStayOpen-collapseOne">
-                                Drum Kit, Bell Kit, Guitar
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show me-0">
-                            <div class="accordion-body  d-flex flex-column align-items-center">
-                                <h3>Value</h3>
-                                <p>$325 and up</p>
-                                <br>
-                                <h3> Rental Fee</h3>
-                                <p> $29.00 per month</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseTwo">
-                                Picolo, Flute, Clarinet
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Trumpet, Trombone
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Alto Saxophone
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Tenor Saxophone
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Oboe, Cello
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Violin
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Viola
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
+          <!-- The Accordian only displays on mobile -->
+          <div
+            class="accordion d-lg-none w-100 gray-bg"
+            id="accordionPanelsStayOpenExample "
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Drum Kit, Bell Kit, Guitar
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show me-0"
+              >
+                <div
+                  class="accordion-body d-flex flex-column align-items-center"
+                >
+                  <h3>Value</h3>
+                  <p>$325 and up</p>
+                  <br />
+                  <h3>Rental Fee</h3>
+                  <p>$29.00 per month</p>
                 </div>
+              </div>
             </div>
-        </section>
-        <!-- Standard Rental Section - End -->
-
-        <!-- Budget Rental Section - Start -->
-        <section>
-            <div class="text-center notes-flipped-bg section-height white-txt d-flex 
-            justify-content-center align-items-center">
-                <h1>Budget Instrument Prices</h1>
-            </div>
-            <div class="d-flex justify-content-center">
-                <table class="d-none d-lg-block format-table">
-                    <tr>
-                        <th>
-                            <h2>Instrument</h2>
-                        </th>
-                        <th>
-                            <h2>Value</h2>
-                        </th>
-                        <th>
-                            <h2>Rental Fee</h2>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Drum Kit, Bell Kit, Guitar</p>
-                        </td>
-                        <td>
-                            <p>S325 and down</p>
-                        </td>
-                        <td>
-                            <p>$23.00 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Picolo, Flute, Clarinet</p>
-                        </td>
-                        <td>
-                            <p>$875 and down</p>
-                        </td>
-                        <td>
-                            <p>$23.00 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Trumpet, Trombone</p>
-                        </td>
-                        <td>
-                            <p>$925 and down</p>
-                        </td>
-                        <td>
-                            <p>$25.00 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Alto Saxophone</p>
-                        </td>
-                        <td>
-                            <p>$925 and down</p>
-                        </td>
-                        <td>
-                            <p>$45.50 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Tenor Saxophone</p>
-                        </td>
-                        <td>
-                            <p>S325 and down</p>
-                        </td>
-                        <td>
-                            <p>$58.50 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Oboe, Cello</p>
-                        </td>
-                        <td>
-                            <p>$875 and down</p>
-                        </td>
-                        <td>
-                            <p>$38.50 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Violin</p>
-                        </td>
-                        <td>
-                            <p>$925 and down</p>
-                        </td>
-                        <td>
-                            <p>$23.00 per month</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Viola</p>
-                        </td>
-                        <td>
-                            <p>$925 and down</p>
-                        </td>
-                        <td>
-                            <p>$23.00 per month</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <div class="accordion d-lg-none w-100 gray-bg" id="accordionPanelsStayOpenExample ">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapse11" aria-expanded="true"
-                                aria-controls="panelsStayOpen-collapseOne">
-                                Drum Kit, Bell Kit, Guitar
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapse11" class="accordion-collapse collapse show">
-                            <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It
-                                is shown by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapse12" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseTwo">
-                                Picolo, Flute, Clarinet
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapse12" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapse13" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Trumpet, Trombone
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapse13" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapse14" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Alto Saxophone
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapse14" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapse15" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Tenor Saxophone
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapse15" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapse16" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Oboe, Cello
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapse16" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapse17" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Violin
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapse17" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#panelsStayOpen-collapse18" aria-expanded="false"
-                                aria-controls="panelsStayOpen-collapseThree">
-                                Viola
-                            </button>
-                        </h2>
-                        <div id="panelsStayOpen-collapse18" class="accordion-collapse collapse me-0">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It
-                                is hidden by default, until the collapse plugin adds the
-                                appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing
-                                and hiding via CSS transitions. You can modify any of this
-                                with custom CSS or overriding our default variables. It's also
-                                worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit
-                                overflow.
-                            </div>
-                        </div>
-                    </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Picolo, Flute, Clarinet
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                  <h3>Value</h3>
+                  <p>$875 and up</p>
+                  <br />
+                  <h3>Rental Fee</h3>
+                  <p>$29.00 per month</p>
                 </div>
-
+              </div>
             </div>
-        </section>
-        <!-- Budget Rental Section - End -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Trumpet, Trombone
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                  <h3>Value</h3>
+                  <p>$925 and up</p>
+                  <br />
+                  <h3>Rental Fee</h3>
+                  <p>$35.00 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Alto Saxophone
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFour"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$1875 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$58.50 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Tenor Saxophone
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseFive"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$2375 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$73.50 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Oboe, Cello
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$1775 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$48.50 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Violin
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseSeven"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$775 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$29.00 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseEight"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Viola
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseEight"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$825 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$25.00 per month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Standard Rental Section - End -->
+
+      <!-- Budget Rental Section - Start -->
+      <section>
+        <div
+          class="text-center notes-flipped-bg section-height white-txt d-flex justify-content-center align-items-center"
+        >
+          <h1>Budget Instrument Prices</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+          <table class="d-none d-lg-block format-table">
+            <tr>
+              <th>
+                <h2>Instrument</h2>
+              </th>
+              <th>
+                <h2>Value</h2>
+              </th>
+              <th>
+                <h2>Rental Fee</h2>
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <p>Drum Kit, Bell Kit, Guitar</p>
+              </td>
+              <td>
+                <p>S325 and down</p>
+              </td>
+              <td>
+                <p>$23.00 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Picolo, Flute, Clarinet</p>
+              </td>
+              <td>
+                <p>$875 and down</p>
+              </td>
+              <td>
+                <p>$23.00 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Trumpet, Trombone</p>
+              </td>
+              <td>
+                <p>$925 and down</p>
+              </td>
+              <td>
+                <p>$25.00 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Alto Saxophone</p>
+              </td>
+              <td>
+                <p>$925 and down</p>
+              </td>
+              <td>
+                <p>$45.50 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Tenor Saxophone</p>
+              </td>
+              <td>
+                <p>S325 and down</p>
+              </td>
+              <td>
+                <p>$58.50 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Oboe, Cello</p>
+              </td>
+              <td>
+                <p>$875 and down</p>
+              </td>
+              <td>
+                <p>$38.50 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Violin</p>
+              </td>
+              <td>
+                <p>$925 and down</p>
+              </td>
+              <td>
+                <p>$23.00 per month</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Viola</p>
+              </td>
+              <td>
+                <p>$925 and down</p>
+              </td>
+              <td>
+                <p>$23.00 per month</p>
+              </td>
+            </tr>
+          </table>
+
+          <div
+            class="accordion d-lg-none w-100 gray-bg"
+            id="accordionPanelsStayOpenExample "
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse11"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Drum Kit, Bell Kit, Guitar
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse11"
+                class="accordion-collapse collapse show"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$325 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$23.00 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse12"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Picolo, Flute, Clarinet
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse12"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$875 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$23.00 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse13"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Trumpet, Trombone
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse13"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$925 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$25.00 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse14"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Alto Saxophone
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse14"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$925 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$25.00 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse15"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Tenor Saxophone
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse15"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$325 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$58.50 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse16"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Oboe, Cello
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse16"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$875 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$38.50 per month</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse17"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Violin
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse17"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$925 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$23.00 per month</p>cordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapse18"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Viola
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapse18"
+                class="accordion-collapse collapse me-0"
+              >
+                <div  class="accordion-body d-flex flex-column align-items-center">
+                    <h3>Value</h3>
+                    <p>$925 and up</p>
+                    <br />
+                    <h3>Rental Fee</h3>
+                    <p>$23.00 per month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Budget Rental Section - End -->
     </main>
 
     <footer class="eighth-grid bg-black pt-3">
-        <div class="footer-div">
-            <div>
-                <ul class="footer-content p-0">
-                    <h3>Location</h3>
-                    <p>138 W. Yosemite Ave,</p>
-                    <p>Manteca, CA 95336</p>
-                    <p>209-823-3067</p>
-                </ul>
-            </div>
-            <div class="order-first order-sm-0 d-flex align-self-center align-self-sm-start mb-3 mb-sm-0">
-                <img class="logo-JMC" src="../assets/JMC_LOGO.png" alt="store logo" />
-            </div>
-            <div>
-                <ul class="footer-content text-sm-end p-0">
-                    <h3>Store Hours</h3>
-                    <p>Monday - Friday • 11:30am - 7pm</p>
-                    <p>Wednesday • 11:30am - 5pm</p>
-                    <p>Saturday • 1pm - 5pm</p>
-                </ul>
-            </div>
+      <div class="footer-div">
+        <div>
+          <ul class="footer-content p-0">
+            <h3>Location</h3>
+            <p>138 W. Yosemite Ave,</p>
+            <p>Manteca, CA 95336</p>
+            <p>209-823-3067</p>
+          </ul>
         </div>
+        <div
+          class="order-first order-sm-0 d-flex align-self-center align-self-sm-start mb-3 mb-sm-0"
+        >
+          <img class="logo-JMC" src="../assets/JMC_LOGO.png" alt="store logo" />
+        </div>
+        <div>
+          <ul class="footer-content text-sm-end p-0">
+            <h3>Store Hours</h3>
+            <p>Monday - Friday • 11:30am - 7pm</p>
+            <p>Wednesday • 11:30am - 5pm</p>
+            <p>Saturday • 1pm - 5pm</p>
+          </ul>
+        </div>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
