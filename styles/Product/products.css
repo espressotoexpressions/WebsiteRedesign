@@ -1,24 +1,68 @@
 @import url(../style.css);
+.section {
+
+    height: 508px; /* Set your desired height */
+ 
+}
+.white-txt{
+
+    color:white;
+}
+.right-align{
+    justify-items: end;     
+}
+.txt-section-width{
+    width: 50%;
+}
+
+.gray-bg{
+    background-color: var(--gray);
+
+}
+.eighth-grid> div{
+    grid-column: 2 / span 6;
+    display: flex;
+    align-items: center;
+    padding: 6rem 0;
+   
+}
+
 
 .guitars-bg{
     background-image: url(../../assets/guitar.jpg);
-    /* saturate always set to 0% for grayscale*/
-    filter:  brightness(100%)  contrast(100%)  saturate(0%); 
+   /*use grayscale 100% to change it to bnw*/
+    filter:  brightness(100%)  contrast(120%)   grayscale(100%); 
     background-size:cover ;
     background-position: center; 
-    
-height: 508px;
-}
-.guitars-txt{
 
-    text-align: right;
-    color:white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
- 
+  
 }
-.gray-section{
-    background-color: var(--gray);
-    height: 508px;
+.keyboards-bg{
+    background-image: url(../../assets/piano-flipped.jpg);
+   /*use grayscale 100% to change it to bnw*/
+    filter:  brightness(100%)  contrast(100%)   grayscale(100%); 
+    background-size:cover ;
+    background-position: center; 
+
 }
+.amplifiers-bg{
+    background-image: url(../../assets/amplifier-1.jpg);
+  /*use grayscale 100% to change it to bnw*/
+    filter:  brightness(100%)  contrast(100%)  saturate(500%)  grayscale(100%); 
+    background-size:cover  ;
+    background-position:0px 800px;
+
+}
+
+.guitarteachers-bg{
+    background-image: url(../../assets/musicnotes.jpg);
+  /*use grayscale 100% to change it to bnw*/
+    filter:  brightness(100%)  contrast(100%)  saturate(500%)  grayscale(100%); 
+    background-size:cover  ;
+    background-position:0px 800px;
+
+}
+
+
+
+
