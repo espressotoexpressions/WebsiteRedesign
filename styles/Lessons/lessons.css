@@ -4,16 +4,16 @@
 .mb-32px {
     margin-bottom: 32px;
 }
+
+.section-title {
+    grid-column: 2 / span 6;
+}
 /* General Use - End */
 
 
 /* Overview Section - Start */
 .overview-section {
     grid-template-rows: repeat(3, auto);
-}
-
-.section-title {
-    grid-column: 2 / span 6;
 }
 
 .overview-section p {
