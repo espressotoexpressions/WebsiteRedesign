@@ -1,6 +1,10 @@
 @import url(../style.css);
 @import url(../Home/home.css);
 
+.eighth-grid {
+    grid-template-rows: auto 1fr;
+}
+
 .today-section {
     background-color: black;
     color: white;
