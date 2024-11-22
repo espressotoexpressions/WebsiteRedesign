@@ -121,6 +121,14 @@ figure img{
         width: 150px;
     }
 
+    .prices-section {
+        margin-bottom: 16px;
+    }
+
+    .prices-section p {
+        margin: 0 8px 0;
+    }  
+
     figure img{
         width: 302px;
         height: 382px;
