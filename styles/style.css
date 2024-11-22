@@ -130,6 +130,10 @@ header {
         margin-left: 16px;
         margin-right: 16px;
     }
+
+    nav .border{
+        border: 0 !important;
+    }
 }
 
 
