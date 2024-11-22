@@ -26,14 +26,14 @@ input{
     height:auto;
 }
 
-button{
+.submitbutton{
     background-color: var(--deep-red);
     height: 50px;
     width:30%;
     color:white;
     border:none;
 }
-button:hover{
+.submitbutton:hover{
     background-color:var(--neutral-red);
 }
 
