@@ -13,15 +13,12 @@
     align-items: start;
 }
 
-.col >div{
-}
 
 input{
     background-color: black;
 }
 
-.formSubmit{
-}
+
 
 .form-control{
     background-color: var(--gray);
