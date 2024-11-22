@@ -67,6 +67,18 @@
         max-height: 323px;
         min-height: 260px;
     }
+
+    .dad-img{
+        object-position: 20% 10%;
+    }
+
+    .rocky-img{
+        object-position: 0 60%;
+    }
+
+    .blue-img{
+        object-position: 0 30%;
+    }
 }
 
 @media (max-width: 576px) {
