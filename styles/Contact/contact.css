@@ -1,1 +1,52 @@
 @import url(../style.css);
+
+.eighth-grid> div{
+    grid-column: 2 / span 6;
+   
+    padding: 6rem 0;
+   
+}
+
+.col{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.col >div{
+}
+
+input{
+    background-color: black;
+}
+
+.formSubmit{
+}
+
+.form-control{
+    background-color: var(--gray);
+    margin-bottom:10px;
+    height:auto;
+}
+
+button{
+    background-color: var(--deep-red);
+    height: 50px;
+    width:30%;
+    color:white;
+    border:none;
+}
+button:hover{
+    background-color:var(--neutral-red);
+}
+
+.contactItem{
+    padding: 10px 0;
+}
+.contactItem i{
+    display: inline-block;
+    font-size: 2rem;
+}
+.contactItem p{
+    padding-top:10px;
+}
