@@ -1,1 +1,70 @@
 @import url(../style.css);
+
+.eighth-grid> div{
+    grid-column: 2 / span 6;
+   
+    padding: 6rem 0;
+   
+   
+}
+
+.col{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.formSubmit{
+    width:70%;
+}
+
+
+
+.form-control{
+    background-color: var(--gray);
+    margin-bottom:10px;
+    height:auto;
+}
+
+.submitbutton{
+    background-color: var(--deep-red);
+    height: 50px;
+    width:30%;
+    color:white;
+    border:none;
+}
+.submitbutton:hover{
+    background-color:var(--neutral-red);
+}
+
+.contactItem{
+    padding: 10px 0;
+}
+.contactItem i{
+    display: inline-block;
+    font-size: 2rem;
+}
+.contactItem p{
+    padding-top:10px;
+}
+
+
+
+@media (max-width: 992px){
+    .maingrid{
+        height:1000px;
+    }
+}
+
+
+@media (max-width: 576px){
+
+    .formSubmit{
+        width:100%;
+    }
+    
+    
+    
+}
+
+
