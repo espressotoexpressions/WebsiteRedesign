@@ -78,6 +78,10 @@ header {
 .collapse{
     margin-right: 134px;
 }
+
+.navbar-nav h3 {
+    margin: 0;
+}
 /* Navbar */
 
 

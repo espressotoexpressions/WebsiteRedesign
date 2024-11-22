@@ -1,2 +1,99 @@
 @import url(../style.css);
 
+
+.gray-bg{
+    background-color: var(--gray);
+}
+
+
+
+.black-bg{
+    background-color: black;
+}
+.white-txt{
+    color:white;
+}
+
+.format-table{
+    margin:2rem 0;
+}
+.format-table th, .format-table td{
+    border:  1px solid black;
+    padding: 1rem 5rem;
+}
+
+.format-table h2{
+    color: var(--deep-red);
+}
+.eighth-grid > div{
+    grid-column: 2 / span 6;
+    padding: 6rem 0;
+   
+}
+
+.section-height {
+
+    height: 190px; 
+ 
+}
+.notes-bg{
+    background-image: url(../../assets/musicnotes-many.jpg);
+   /*use grayscale 100% to change it to bnw*/
+    filter:  brightness(100%)  contrast(100%)   grayscale(100%); 
+    background-size:cover ;
+    background-position: center; 
+  
+}
+
+.notes-flipped-bg{
+    background-image: url(../../assets/musicnotes-many-flipped.jpg);
+   /*use grayscale 100% to change it to bnw*/
+    filter:  brightness(100%)  contrast(100%)   grayscale(100%); 
+    background-size:cover ;
+    background-position: center; 
+  
+}
+.accordion-button{
+    background-color:var(--gray);
+    box-shadow: 0 0 0 2px black;
+
+}
+/*properties for active accordion*/
+.accordion-button:not(.collapsed) {
+    background-color: var(--gray); 
+    color:black;
+   border:none;
+  }
+  /*removes the blue outline (bootstrap default) when accordion is selected*/
+  .accordion-button:focus {
+    box-shadow: 0 0 0 2px black;
+    outline: none;
+  }
+
+@media (max-width: 992px){
+    
+    .format-table{
+        margin:2rem 0;
+    }
+    .format-table th, .format-table td{
+    
+        padding: 1rem 1rem;
+    }
+    
+   
+    .eighth-grid > div{
+        grid-column: 1/ span 8;
+        padding: 0 0;
+       
+    }
+}
+
+
+@media (max-width: 576px){
+
+   
+    .eighth-grid > div{
+        grid-column: 1 / span 8;
+        padding: 0 8px 0 8px;
+    }
+}
