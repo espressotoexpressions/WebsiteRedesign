@@ -41,3 +41,61 @@
     height: 90px;
 }
 /* Lessons Offered Section - End */
+
+/* Price Listing Section - Start */
+.prices-section {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+} 
+
+.pricing-row {
+    grid-column: 2 / 8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prices-section p {
+    grid-row-start: 3;
+    grid-column: 2 / 8;
+}
+/* Price Listing Section - End */
+
+/* Instructors Section - Start */
+.instructor-photo-grid {
+    grid-column: 2 / 8;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 2.5rem;
+}
+
+figure img{
+    width: 389px;
+    height: 483px;
+    /* aspect-ratio: 389 / 483; */
+    object-fit: cover;
+}
+/* Instructors Section - End */
+
+/* Quote - Start */
+.quote {
+    font-family: "playfair", 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 32px 0;
+}
+/* Quote - End */
+
+
+
+/* ########################### Tablet - Start ########################### */
+/* @media (max-width: 992px) {
+
+} */
+/* ########################### Tablet - End ########################### */
+
+
+/* ########################### Mobile - Start ########################### */
+/* @media (max-width: 576px) {
+
+} */
+/* ########################### Mobile - End ########################### */
