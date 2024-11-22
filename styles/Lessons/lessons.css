@@ -1,1 +1,43 @@
 @import url(../style.css);
+
+/* General Use - Start */
+.mb-32px {
+    margin-bottom: 32px;
+}
+/* General Use - End */
+
+
+/* Overview Section - Start */
+.overview-section {
+    grid-template-rows: repeat(3, auto);
+}
+
+.section-title {
+    grid-column: 2 / span 6;
+}
+
+.overview-section p {
+    grid-column: 2 / span 6;
+    margin-bottom: 32px;
+}
+/* Overview Section - End */
+
+/* Lessons Offered Section - Start */
+.icon-grid {
+    grid-column: 2 / 8;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+}
+
+.icon-grid p {
+    text-align: center;
+    width: 180px;
+}
+
+.icon-grid img {
+    width: 90px;
+    height: 90px;
+}
+/* Lessons Offered Section - End */
