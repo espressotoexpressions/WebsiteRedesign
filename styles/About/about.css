@@ -1,2 +1,11 @@
 @import url(../style.css);
 @import url(../Home/home.css);
+
+.today-section {
+    background-color: black;
+    color: white;
+}
+
+.rocky-section {
+    background-color: var(--gray);
+}
