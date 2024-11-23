@@ -38,7 +38,7 @@ h3 {
 }
 
 p {
-    font-family: "lato-bold", Arial, Helvetica, sans-serif;
+    font-family: "lato-regular", Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin: 0;
 }
@@ -77,6 +77,10 @@ header {
 
 .collapse{
     margin-right: 134px;
+}
+
+.navbar-nav h3 {
+    margin: 0;
 }
 /* Navbar */
 
@@ -125,6 +129,10 @@ header {
         grid-column: 1 / span 8;
         margin-left: 16px;
         margin-right: 16px;
+    }
+
+    nav .border{
+        border: 0 !important;
     }
 }
 
