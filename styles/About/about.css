@@ -40,6 +40,20 @@
     object-position: 20%;
 }
 
+.dad-img{
+    object-position: 20% 10%;
+}
+
+.rocky-img{
+    max-height: 360px;
+    object-position: 0 60%;
+}
+
+.blue-img{
+    max-height: 360px;
+    object-position: 0 30%;
+}
+
 @media (max-width: 992px) {
     .about-card-header {
         grid-column: 2 / 8;
