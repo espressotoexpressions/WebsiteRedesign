@@ -51,18 +51,18 @@
 .amplifiers-bg{
     background-image: url(../../assets/amplifier-1.jpg);
   /*use grayscale 100% to change it to bnw*/
-    filter:  brightness(100%)  contrast(100%)  saturate(500%)  grayscale(100%); 
+    filter:  brightness(100%)  contrast(100%)  saturate(100%)  grayscale(100%); 
     background-size:cover  ;
-    background-position:0px 800px;
+    background-position:center;
 
 }
 
 .guitarteachers-bg{
     background-image: url(../../assets/musicnotes.jpg);
   /*use grayscale 100% to change it to bnw*/
-    filter:  brightness(100%)  contrast(100%)  saturate(500%)  grayscale(100%); 
+    filter:  brightness(100%)  contrast(100%)  saturate(100%)  grayscale(100%); 
     background-size:cover  ;
-    background-position:0px 800px;
+    background-position:center;
 
 }
 
@@ -78,14 +78,23 @@
     @media (max-width: 576px){
     .section{
         height:auto;
-    }
+         }
     .bg-color-overlay{
         background-color:  #00000080;
-        
+      
+   
     }
      .txt-section-width{
         width: 100%;
+        margin: 10px 0px ;
+        /* padding:1rem 0; */
     }
+    .eighth-grid> div{
+        grid-column: 1 / span 8;
+        padding:0px 8px;
+       
+    }
+    
     }
     
 
