@@ -54,6 +54,12 @@
     object-position: 0 30%;
 }
 
+@media (min-width: 1400px){
+    .dad-img{
+        max-height: 480px;
+    }
+}
+
 @media (max-width: 992px) {
     .about-card-header {
         grid-column: 2 / 8;
