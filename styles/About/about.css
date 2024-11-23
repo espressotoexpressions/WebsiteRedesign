@@ -106,6 +106,10 @@
 }
 
 @media (max-width: 576px) {
+    p {
+        font-weight: 600;
+    }
+
     .about-card-header {
         grid-column: 1 / 9;
     }
