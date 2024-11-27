@@ -53,9 +53,11 @@
     background-position: center; 
   
 }
+
 .accordion-button{
     background-color:var(--gray);
     box-shadow: 0 0 0 2px black;
+    font-weight: bolder;
 
 }
 /*properties for active accordion*/
