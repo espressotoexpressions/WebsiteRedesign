@@ -31,6 +31,11 @@
    
 }
 
+/* to remove extra padding in the footer since it is being inherited from div>eighth-grid*/
+.footer-div{
+    padding: 0 0 !important;
+}
+
 .section-height {
 
     height: 190px; 
