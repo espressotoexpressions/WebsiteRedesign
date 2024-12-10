@@ -27,7 +27,7 @@
 }
 .eighth-grid > div{
     grid-column: 2 / span 6;
-    padding: 6rem 0;
+    /* margin-bottom: 1rem 0; */
    
 }
 
